@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #111;
+
+        }
+        .card {
+            margin: auto;
+            margin-top: 50px;
+            height: 450px;
+            width: 310px;
+            background-color: #fff;
+            transform: scale(0.7);
+            border-radius: 8px;
+            box-shadow: 0 0 80px 1px #4169b0;
+        }
+        .info{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            
+            justify-content: center;
+        }
+        .name {
+            font-size: 35px;
+            color: #f79f08;
+            font-weight: 700;
+            position: absolute;
+            letter-spacing: 2px;
+            top: 100px;
+        }
+        .prof {
+            font-size: 25px;
+            position: absolute;
+            color: #555555;
+            top: 140px;
+        }
+        .divider {
+            background: #949594;
+            height: 1.5px;
+            width: 50px;
+            position: absolute;
+            top: 190px;
+        }
+        .bio {
+            position: absolute;
+            top: 220px;
+            color: #949594;
+            line-height: 28px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .btn {
+            position: absolute;
+            bottom: 30px;
+            background-color: #f79f08;
+            font-size: 20px;
+            border: none;
+            padding: 13px 25px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .photo {
+            height: 100%;
+            width: 100%;
+            background-image: url(../images/my\ pic\ 2.jpg);
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 0;
+            background-size: 100% 100%;
+            border-radius: 8px;
+            transition: all ease 1s;
+        }
+
+        .card:hover .photo {
+            transform: scale(0.5, 0.35) translateY(-650px);
+            border-radius: 50%;
+            background-size: 100% 100%;
+            /* background-position: 0 -25px; */
+        }
+        .card-text {
+            position: absolute;
+            bottom: -70px;
+            font-size: 25px;
+            color: #fabe58;
+            background-color: #fff;
+            width: 100%;
+            padding: 12px 0;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="card">
+        <div class="info">
+            <div class="name">Jamshaid</div>
+            <div class="prof">Devoloper</div>
+            <div class="divider"></div>
+            <div class="bio">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptate architecto nobis? Distinctio optio accusamus excepturi fuga deleniti bl
+            </div>
+            <button class="btn">contact me</button>
+        </div>
+        <div class="photo"></div>
+        <a href="#" class="card-text">My youtube channel</a>
+    </div>
+
+
+
+
+</body>
+</html>
